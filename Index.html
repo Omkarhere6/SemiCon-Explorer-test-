@@ -10,6 +10,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,13 +19,6 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Spinner Start -->
-    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div> -->
-    <!-- Spinner End -->
 
      <!-- Navbar Start -->
      <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -37,27 +31,35 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">Fundamentals</a>
-                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fundamentals</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="semiconductorPhysics.html" class="dropdown-item">Semiconductor Physics</a>
+                        <a href="cmos.html" class="dropdown-item">CMOS Fundamentals</a>
+                        <a href="digitalElectronics.html" class="dropdown-item">Digital Electronics</a>
+                    </div>
+                </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Front-End Design</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="booking.html" class="dropdown-item">Booking</a>
-                        <a href="team.html" class="dropdown-item">Technicians</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="verlogHdl.html" class="dropdown-item">Verilog HDL</a>
+                        <a href="simAndCo.html" class="dropdown-item">Simulation & Converage Analysis</a>
+                        <a href="synthesis.html" class="dropdown-item">Synthesis</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Back-End Design</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="booking.html" class="dropdown-item">Booking</a>
-                        <a href="team.html" class="dropdown-item">Technicians</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href=" sanityCheck.html" class="dropdown-item">Sanity Checks</a>
+                        <a href="floorPlanning.html" class="dropdown-item">Floor-PLanning</a>
+                        <a href="powerPlanning.html" class="dropdown-item">Power Planning</a>
+                        <a href="placement.html" class="dropdown-item">Placement</a>
+                        <a href="cts.html" class="dropdown-item">CTS</a>
+                        <a href="routing.html" class="dropdown-item">Routing</a>
+                        <a href="signOff.html" class="dropdown-item">Sign-Off</a>
                     </div>
                 </div>
-                <a href="service.html" class="nav-item nav-link">About</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -87,71 +89,203 @@
                 </div>
                 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
     <!-- Carousel End -->
-
-
-
-    <!-- Service Start -->
+     
+    <!-- Introduction Start -->
 
     <div class="container-xxl service py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase"></h6>
-                <h1 class="mb-1">Explore Modules</h1>
+                <h1 class="mb-1">Introduction</h1>
             </div>
         </div>
     </div>
+
+
+
+    <!-- Introduction End -->
+
+    
+
+
+
+    <!-- Fundamentals Start -->
+
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase"></h6>
+                <h2 class="mb-1">Fundamentals</h2>
+            </div>
+        </div>
+    </div>
+
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex py-5 px-4">
-                        <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Fundamentals</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+
+                        <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card  " style="width: 18rem;">
+                            <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Semiconductor Physics</h5>
+                                <a class="text-secondary border-bottom" href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CMOS Fundamentals</h5>
+                                <a class="text-secondary border-bottom" href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Electronics</h5>
+                                <a class="text-secondary border-bottom" href="">Read More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="d-flex bg-light py-5 px-4">
-                        <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Front-End Design</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
-                        </div>
+                      </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex py-5 px-4">
-                        <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Back-End Design</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+
+
+    <!-- Fundamentals End -->
+
+
+    <!-- Front-End Start -->
+
+    <div class="container-xxl service py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-primary text-uppercase"></h6>
+                    <h2 class="mb-1">Front-End Design</h2>
+                </div>
+            </div>
+    </div>
+
+    <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around">
+                            <div class="card  " style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Verilog HDL</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Simulation & Converage Analysis</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Synthesis</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                          </div>
                         </div>
                     </div>
-                </div>
+
+    <!-- Front-End End -->
+
+
+    <!-- Back-End Start -->
+
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase"></h6>
+                <h2 class="mb-1">Back-End Design</h2>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+
+    <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around">
+                            <div class="card  " style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">Sanity Checks</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Floor-PLanning</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Power Planning</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="row g-4 mt-5">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around">
+                            <div class="card  " style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Placement</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">CTS</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Routing</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="row g-4 mt-5">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around">
+                            <div class="card  " style="width: 18rem;">
+                                <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sign-Off</h5>
+                                    <a class="text-secondary border-bottom" href="">Read More</a>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <!-- Back-End End -->
 
      <!-- Footer Start -->
+
      <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -187,6 +321,7 @@
         </div>
        
     </div>
+
     <!-- Footer End -->
 
 
